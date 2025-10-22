@@ -43,7 +43,7 @@ def test_empty_password(setup_teardown):
 # Test 3: Short password
 def test_short_password(setup_teardown):
     driver = setup_teardown
-    driver.get("http://127.0.0.1:5001/")
+    driver.get("http://127.0.0.1:5000/")
     driver.find_element(By.NAME, "username").send_keys("Teja")
     driver.find_element(By.NAME, "pwd").send_keys("tej")
     driver.find_element(By.NAME, "sb").click()
